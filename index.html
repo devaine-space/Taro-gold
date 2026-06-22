@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Taro22 — черный мистический сайт-лендинг с редактируемыми блоками и кликабельными символами."
+    />
+    <title>Taro22 | Таро и консультации</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header" aria-label="Навигация по сайту">
+        <a class="site-brand" href="#hero">
+          <span class="site-brand-mark">✦</span>
+          <span class="site-brand-text">
+            <strong>Тайны Таро</strong>
+            <small>Таро и консультации</small>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Основное меню">
+          <a href="#hero">Главная</a>
+          <a href="#popular">Расклады</a>
+          <a href="#about">Обо мне</a>
+          <a href="#consultations">Консультации</a>
+          <a href="#cta">Контакты</a>
+        </nav>
+        <a class="button button-primary site-header-button" href="#consultations">Получить консультацию</a>
+      </header>
+
+      <header class="hero panel" id="hero" data-block="hero">
+        <button class="icon-btn ornament top-left" type="button" data-edit="hero" aria-label="Редактировать верхний орнамент">
+          ✦
+        </button>
+        <span
+          class="moon-mark ornament top-right"
+          role="button"
+          tabindex="0"
+          data-edit="hero"
+          aria-label="Редактировать луну"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <circle cx="32" cy="32" r="27" stroke="currentColor" stroke-width="1.6" />
+            <path
+              d="M39 18c-7 1.5-12 7.5-12 14.5S32 45 39 46.5c-4.5-3.4-7-7.8-7-14.5S34.5 21.4 39 18Z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+        <div class="hero-artrow" aria-hidden="true">
+          <div class="hero-orb hero-art-right">
+            <img class="hero-art" src="assets/hero-card-right.webp" alt="" />
+          </div>
+          <div class="hero-copy">
+            <h1>Тайны<br />Таро</h1>
+            <a class="button button-primary hero-cta" href="#cta" data-edit="hero">Получить предсказание</a>
+          </div>
+        </div>
+        <p class="hero-subtitle">Откройте тайны своего будущего</p>
+        <button class="icon-btn spark spark-left" type="button" data-edit="hero" aria-label="Редактировать декоративный символ">
+          ✦
+        </button>
+        <button class="icon-btn spark spark-right" type="button" data-edit="hero" aria-label="Редактировать декоративный символ">
+          ✧
+        </button>
+      </header>
+
+      <div class="section-divider" aria-hidden="true">
+        <span class="section-divider-line"></span>
+        <img src="assets/moon-divider.svg" alt="" />
+        <span class="section-divider-line"></span>
+      </div>
+
+      <main>
+        <section class="panel section" id="questions" data-block="questions">
+          <div class="section-head">
+            <p class="section-label">С чем я помогаю разобраться</p>
+          </div>
+          <div class="card-grid">
+            <article class="mini-card">
+              <button class="card-symbol card-symbol-image card-symbol-image-contain" type="button" data-edit="questions" aria-label="Редактировать блок Расклады таро">
+                <img
+                  src="assets/tarot-spread.webp"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </button>
+              <h2>Расклады таро</h2>
+              <p class="card-note">Помогают увидеть скрытую суть ситуации, возможные сценарии развития и внутренние причины происходящего.</p>
+            </article>
+            <article class="mini-card">
+              <button class="card-symbol card-symbol-image card-symbol-image-contain" type="button" data-edit="questions" aria-label="Редактировать блок Предсказания">
+                <img
+                  src="assets/forecast-hourglass.webp"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </button>
+              <h2>Предсказания</h2>
+              <p class="card-note">Дают направление, показывают вероятные события будущего и то, на что стоит обратить особое внимание.</p>
+            </article>
+            <article class="mini-card">
+              <button class="card-symbol card-symbol-image card-symbol-image-contain" type="button" data-edit="questions" aria-label="Редактировать блок Гармония души">
+                <img
+                  src="assets/harmony-heart.webp"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </button>
+              <h2>Гармония души</h2>
+              <p class="card-note">Помогает восстановить внутренний баланс, лучше понять себя и найти точку опоры в непростые периоды жизни.</p>
+            </article>
+          </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true">
+          <span class="section-divider-line"></span>
+          <img src="assets/moon-divider.svg" alt="" />
+          <span class="section-divider-line"></span>
+        </div>
+
+        <section class="panel section popular" id="popular" data-block="popular">
+          <div class="section-head popular-head">
+            <p class="section-label">Популярные расклады</p>
+          </div>
+          <div class="popular-grid">
+            <article class="spread-card">
+              <div class="spread-visual spread-love spread-love-contain" aria-hidden="true">
+                <img src="assets/path-love.webp" alt="" />
+              </div>
+              <h2>Путь любви</h2>
+              <p>Расклад на отношения, чувства и сближение.</p>
+              <button class="spread-link" type="button" data-spread="love">Подробнее</button>
+            </article>
+            <article class="spread-card">
+              <div class="spread-visual spread-wheel spread-wheel-contain" aria-hidden="true">
+                <img src="assets/wheel-fate.webp" alt="" />
+              </div>
+              <h2>Колесо судьбы</h2>
+              <p>Подсказки о вероятных переменах и поворотах пути.</p>
+              <button class="spread-link" type="button" data-spread="wheel">Подробнее</button>
+            </article>
+            <article class="spread-card">
+              <div class="spread-visual spread-secrets spread-secrets-contain" aria-hidden="true">
+                <img src="assets/fate-key.webp" alt="" />
+              </div>
+              <h2>Тайны судьбы</h2>
+              <p>Поиск своего пути и скрытых смыслов ситуации.</p>
+              <button class="spread-link" type="button" data-spread="secrets">Подробнее</button>
+            </article>
+          </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true">
+          <span class="section-divider-line"></span>
+          <img src="assets/moon-divider.svg" alt="" />
+          <span class="section-divider-line"></span>
+        </div>
+
+        <section class="panel section about" id="about" data-block="about">
+          <div class="section-head">
+            <p class="section-label">Обо мне</p>
+          </div>
+          <div class="about-layout">
+            <div class="about-copy">
+              <p>Я работаю с Таро и помогаю людям разобраться в себе, в отношениях и в ситуациях, которые не дают ясности.</p>
+              <p>Для меня Таро — это не про гадание, а про понимание. Это инструмент, который помогает увидеть то, что обычно скрыто: настоящие причины, внутренние состояния и суть происходящего.</p>
+              <p>В своей работе я соединяю разные подходы, чтобы давать не абстрактные ответы, а реальное понимание ситуации.</p>
+              <p>Моя задача — дать вам опору, с которой можно двигаться дальше и принимать решения.</p>
+              <a class="button button-primary about-button" href="#consultations">Получить консультацию</a>
+            </div>
+            <div class="portrait-frame">
+              <img class="portrait-image" src="assets/about-portrait.webp" alt="" aria-hidden="true" />
+              <div class="portrait-placeholder" aria-hidden="true">
+                <span>✦</span>
+                <span>◉</span>
+                <span>☽</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true">
+          <span class="section-divider-line"></span>
+          <img src="assets/moon-divider.svg" alt="" />
+          <span class="section-divider-line"></span>
+        </div>
+
+        <section class="panel section video-section" id="process" data-block="process">
+          <div class="section-head">
+            <p class="section-label">Мои видео-разборы</p>
+          </div>
+          <div class="video-feature">
+            <div class="video-preview" aria-hidden="true">
+              <img class="video-preview-image" src="assets/video-preview.webp" alt="" />
+              <div class="video-thumb-label">Видео-разбор</div>
+              <div class="video-preview-glow"></div>
+              <div class="video-preview-ornament"></div>
+              <a class="video-play" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" aria-label="Смотреть видео">
+                <span></span>
+              </a>
+            </div>
+            <div class="video-copy">
+              <p>
+                Здесь можно разместить ссылку на видео-разбор и показать легкую заглушку,
+                чтобы сайт оставался быстрым и не перегружался.
+              </p>
+              <a class="spread-link video-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">Смотреть больше</a>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true">
+          <span class="section-divider-line"></span>
+          <img src="assets/moon-divider.svg" alt="" />
+          <span class="section-divider-line"></span>
+        </div>
+
+        <section class="panel section consultations" id="consultations">
+          <div class="section-head">
+            <p class="section-label">Консультации</p>
+          </div>
+          <div class="consult-grid">
+            <article class="consult-card">
+              <h2>Консультация до 4 вопросов</h2>
+              <p>Подходит, если у вас есть несколько точных вопросов и нужен короткий, но ясный разбор по ситуации.</p>
+              <p class="consult-cost">Стоимость: 3 500 ₽ / 30 минут</p>
+            </article>
+            <article class="consult-card">
+              <h2>Подробная консультация</h2>
+              <p>Для тех, кому важно глубже посмотреть на ситуацию, увидеть причины происходящего и возможные шаги дальше.</p>
+              <p class="consult-cost">Стоимость: 5 500 ₽ / 60 минут</p>
+            </article>
+            <article class="consult-card">
+              <h2>Разбор отношений</h2>
+              <p>Помогает понять динамику пары, чувства, скрытые мотивы и то, куда на самом деле движется связь.</p>
+              <p class="consult-cost">Стоимость: 4 900 ₽ / 45 минут</p>
+            </article>
+            <article class="consult-card">
+              <h2>Прогноз на период</h2>
+              <p>Когда хочется увидеть ближайшие тенденции, точки роста и понять, к чему готовит вас следующий этап.</p>
+              <p class="consult-cost">Стоимость: 6 500 ₽ / 60 минут</p>
+            </article>
+          </div>
+          <div class="consult-actions">
+            <a class="button button-primary consult-button" href="mailto:hello@taro22.ru">Получить консультацию</a>
+          </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true">
+          <span class="section-divider-line"></span>
+          <img src="assets/moon-divider.svg" alt="" />
+          <span class="section-divider-line"></span>
+        </div>
+
+        <section class="panel section reviews" id="reviews" data-block="reviews">
+          <div class="section-head">
+            <p class="section-label">Отзывы клиентов</p>
+          </div>
+          <div class="review-grid">
+            <article class="review-card">
+              <button class="review-avatar" type="button" data-edit="reviews" aria-label="Редактировать отзыв Анны">
+                А
+              </button>
+              <div>
+                <h3>Анна</h3>
+                <p>«Благодаря вам я поняла, как поступить. Теперь всё изменилось к лучшему.»</p>
+              </div>
+            </article>
+            <article class="review-card">
+              <button class="review-avatar" type="button" data-edit="reviews" aria-label="Редактировать отзыв Сергея">
+                С
+              </button>
+              <div>
+                <h3>Сергей</h3>
+                <p>«Четкие и точные предсказания помогли разобраться в сложном вопросе.»</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true">
+          <span class="section-divider-line"></span>
+          <img src="assets/moon-divider.svg" alt="" />
+          <span class="section-divider-line"></span>
+        </div>
+
+        <section class="panel section contacts" id="cta" data-block="cta">
+          <div class="section-head">
+            <p class="section-label">Контакты</p>
+          </div>
+          <div class="contacts-grid">
+            <a class="contact-card" href="tel:+79999999999">
+              <span class="contact-label">Телефон</span>
+              <strong>+7 (999) 999-99-99</strong>
+            </a>
+            <a class="contact-card" href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+              <span class="contact-label">Instagram</span>
+              <strong>@taro22</strong>
+            </a>
+            <a class="contact-card" href="https://t.me/" target="_blank" rel="noopener noreferrer">
+              <span class="contact-label">Telegram</span>
+              <strong>@taro22</strong>
+            </a>
+            <a class="contact-card" href="https://wa.me/79999999999" target="_blank" rel="noopener noreferrer">
+              <span class="contact-label">WhatsApp</span>
+              <strong>Написать в WhatsApp</strong>
+            </a>
+            <a class="contact-card" href="https://youtube.com/" target="_blank" rel="noopener noreferrer">
+              <span class="contact-label">YouTube</span>
+              <strong>Видео-разборы</strong>
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="spread-modal" hidden>
+      <div class="spread-modal-backdrop" data-close-spread></div>
+      <div class="spread-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="spread-modal-title">
+        <button class="spread-modal-close" type="button" data-close-spread aria-label="Закрыть описание">×</button>
+        <p class="spread-modal-kicker">Популярные расклады</p>
+        <h2 id="spread-modal-title"></h2>
+        <div class="spread-modal-content"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
